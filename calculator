@@ -1,0 +1,36 @@
+#This one is for just straight panels at 180 degrees, it would be pretty easy to have it multiply by a certain number for the azimuth, 
+I just need to figure out, for example if we have 2 arrays on the roof, les say a 6 kw and a 3 kw, if the 6 kw is facing due east it would
+get a dividor of like 0.85, due south would be 1.00, north would be like 0.75. I dont know the exact numbers yet, working on that.
+
+
+numPanels = 42
+
+
+
+wattage = numPanels * 300
+cost = wattage * 2
+taxCredit = cost * 0.3
+gasOffset = wattage * 0.1483
+avgProd = wattage / 55
+
+print("We can fit " + str(numPanels) + " solar panels on your roof, which equals " 
+      + str(wattage )
+      +" total watts DC. The estimated cost for this sytem is $"  
+      + str(cost)
+      + " and it will be eligible for a tax credit of $" + str(taxCredit ) 
+      + "This will have a very positive impact on the environment, in fact your " + str(wattage) 
+      + " watt solar system will offset the same amount of co2 emissions as " + str(gasOffset) 
+      + " gallons of gas not being burned for one year. Thats not the only benefit, according to the calculations, this system should save you around $"
+      + str(avgProd) + " per month on average!"
+      
+      )
+      
+ # output : We can fit 42 solar panels on your roof, which equals 12600 total watts DC. 
+ #The estimated cost for this sytem is $25200 and it will be eligible for a tax credit of $7560.0This will have a very positive impact 
+# on the environment, in fact your 12600 watt solar system will offset the same amount of co2 emissions as 1868.58 gallons of gas 
+# not being burned for one year. Thats not the only benefit, according to the calculations, this system should save you around
+# $229 per month on average!
+
+
+
+​
