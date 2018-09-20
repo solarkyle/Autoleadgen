@@ -1,3 +1,5 @@
+import yaml
+
 #This one is for just straight panels at 180 degrees, it would be pretty easy to have it multiply by a certain number for the azimuth, 
 I just need to figure out, for example if we have 2 arrays on the roof, les say a 6 kw and a 3 kw, if the 6 kw is facing due east it would
 get a dividor of like 0.85, due south would be 1.00, north would be like 0.75. I dont know the exact numbers yet, working on that.
