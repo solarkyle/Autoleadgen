@@ -1,0 +1,87 @@
+POP: dal1
+PUBLIC-v4: 172.102.235
+PUBLIC-v6: 2620:122:9003
+PRIVATE-v4: 10.5.0
+PUBLIC-ADDRESSED: false
+PROVIDERS:
+    - ID: cogent
+      v4: true
+      v6: true
+      AS: 174
+      LAG: true
+      LAG_INT: ae1
+      NETWORK_v4: 38.122.56.112/29
+      OURSIDE_v4: 38.122.56.114/29
+      THEIRSIDE_v4: 38.122.56.113
+      NETWORK_v6: 2001:550:2302::/48
+      OURSIDE_v6: 2001:550:2:49::D:2/112
+      THEIRSIDE_v6: 2001:550:2:49::D:1
+      INTERFACES: 
+        - xe-0/0/48:0
+        - xe-0/0/49:0
+      DNS_v4: 38.99.236.32/29
+    - ID: telia
+      v4: true
+      v6: true
+      AS: 1299
+      LAG: true
+      LAG_INT: ae3
+      NETWORK_v4: 62.115.62.56/29
+      OURSIDE_v4: 62.115.62.58/29
+      THEIRSIDE_v4: 62.115.62.57
+      NETWORK_v6: 2001:2000:3080:0E27::0/64
+      OURSIDE_v6: 2001:2000:3080:0E27::2/64
+      THEIRSIDE_v6: 2001:2000:3080:0E27::1
+      INTERFACES: 
+        - xe-0/0/48:1
+        - xe-0/0/49:3
+    - ID: ntt
+      v4: true
+      v6: true
+      AS: 2914
+      LAG: true
+      LAG_INT: ae0
+      NETWORK_v4: 128.241.0.152/29
+      OURSIDE_v4: 128.241.0.154/29
+      THEIRSIDE_v4: 128.241.0.153
+      NETWORK_v6: 2001:418:1401:b4::0/64
+      OURSIDE_v6: 2001:418:1401:b4::2/64
+      THEIRSIDE_v6: 2001:418:1401:b4::1
+      INTERFACES: 
+        - xe-0/0/48:2
+      DNS_v4: 128.241.0.224/29
+    - ID: tata
+      v4: true
+      v6: true
+      AS: 6453
+      LAG: false
+      NETWORK_v4: 216.6.53.56/29
+      OURSIDE_v4: 216.6.53.58/29
+      THEIRSIDE_v4: 216.6.53.57
+      NETWORK_v6: 2001:5a0:200:501::/64
+      OURSIDE_v6: 2001:5a0:200:501::2/64
+      THEIRSIDE_v6: 2001:5a0:200:501::1
+      INTERFACES:
+        - xe-0/0/49:1
+      DNS_v4: 63.243.240.24/29
+    - ID: comcast
+      v4: true
+      v6: true
+      AS: 7922
+      LAG: true
+      LAG_INT: ae2
+      NETWORK_v4: 75.149.229.144/29
+      OURSIDE_v4: 75.149.229.146/29
+      THEIRSIDE_v4: 75.149.229.145
+      NETWORK_v6: 2001:559:0:11::30/124
+      OURSIDE_v6: 2001:559:0:11::32/124
+      THEIRSIDE_v6: 2001:559:0:11::31
+      INTERFACES:
+        - xe-0/0/49:2
+        - xe-0/0/50:0
+VIPS:
+  vip1: 38.122.56.118
+  vip2: 62.115.62.62
+  vip3: 128.241.0.158
+  vip4: 216.6.53.62
+  vip5: 75.149.229.150
