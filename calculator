@@ -5,7 +5,10 @@ get a dividor of like 0.85, due south would be 1.00, north would be like 0.75. I
 
 numPanels = 42
 
+with open('azimuth.yaml') as fh:
+    azimuth = yaml.load(fh)
 
+# Then you'd just call the value you want, like azimuth['S180']
 
 wattage = numPanels * 300
 cost = wattage * 2
